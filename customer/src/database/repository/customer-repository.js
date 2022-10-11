@@ -111,7 +111,8 @@ class CustomerRepository {
                 profile.wishlist = wishlist;
             }
     
-            const profileResult = await profile.save();      
+            const profileResult = await profile.save();  
+            console.log(profileResult.wishlist, "profileResult.wishlist")    
     
             return profileResult.wishlist;
 
